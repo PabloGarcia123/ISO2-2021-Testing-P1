@@ -12,14 +12,14 @@ public class TestPrueba {
 	private static Persona p;
 	private static Tiempo t;
 	private static Lugar l;
-	private static Prueba pr;
+	
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		p = new Persona(false, true, true, true);
 		t = new Tiempo(29, 3, false,false,false);
 		l= new Lugar(false,false);
-		pr= new Prueba(p,t,l);
+		
 	}
 
 
@@ -31,13 +31,9 @@ public class TestPrueba {
 
 	@Test
 	public void testRecomendarActividad() {
-		assertEquals("Con estas condiciones no puede realizar ninguna actividad.",(pr.recomendarActividad(p, t, l)));
+		assertEquals("Con estas condiciones no puede realizar ninguna actividad.",(PRUEBA.recomendarActividad(p, t, l)));
 	}
 
 
-	private Object pr(Persona p2, Tiempo t2, Lugar l2) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 }
