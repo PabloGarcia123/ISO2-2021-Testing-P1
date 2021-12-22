@@ -1,4 +1,4 @@
-﻿Ejercicio 2 del grupo B05
+﻿Ejercicio 1 del grupo B05
 
 Integrantes:
 
